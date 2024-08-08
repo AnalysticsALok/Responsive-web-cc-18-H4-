@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Heebo:wght@100..900&family=Honk&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: heebo;
+    /* outline: 1px solid red; */
+    font-size: 16px;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 1);
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 80px;
+}
+
+header a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.fa-bars{
+    font-size: 0rem;
+}
+
+section {
+    display: flex;
+    margin-inline: auto;
+    width: 55vw;
+}
+
+.intro {
+    justify-content: space-between;
+}
+
+
+.introinfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29vw;
+}
+
+.introinfos h1,.introinfos p,.introinfos button{
+    margin-bottom: 1.5rem;
+}
+
+.introinfos h1{
+    font-size: 2.75rem;
+}
+.introinfos button{
+    width: 10vw;
+    padding: 0.5rem;
+    background-color: #ff6464;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+
+}
+
+
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+
+.postpgcolor{
+    background-color: rgba(237, 247, 250, 1);
+}
+
+.post1{
+    grid-column: 1/-1 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 2rem;
+}
+
+.viewall{
+    color: rgba(0, 168, 204, 1);
+}
+
+
+.post2,.post3{
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.featured{
+    display: grid;
+    grid-template-rows:0.7fr 3fr 3fr 3fr ;
+} 
+
+.work{
+    display: flex;
+
+}
+
+.contentctn h3{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.contentctn .work-year{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+p.work-year{
+    color: rgba(134, 149, 164, 1);
+}
+
+.contentctn .work-detail{
+    padding-left: 1rem;
+    width: 30vw;
+    margin-bottom: 1rem;
+}
+
+
+.work .contentctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.copyright{
+    font-size: 0.8rem;
+}
+.socialmedia{
+    padding: 1rem;
+}
+.socialmedia a{
+    padding: 0.5rem;
+}
+
+.yearborder{
+    color: white;
+    background-color: rgba(20, 40, 80, 1);
+    border-radius: 0.8rem;
+    padding-inline: 0.8rem;
+    margin-right: 1.5rem;
+}
+
+.headingforh2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top:1rem ;
+    margin-bottom: 0.5rem;
+}
+
+.postdetails{
+    margin-top: 1rem;
+}
+
+.posth3tag{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media(max-width: 950px) {
+    
+     *{
+         font-size: 12px;
+    }
+    .fa-bars{
+        font-size: 2rem;
+    }
+    header{
+        justify-content: right;
+        padding-inline: 2rem ;
+        height: 10vh;
+    }
+    nav{
+        display: none;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .introinfos{
+        text-align: center;
+        align-items: center;
+    }
+
+    .introinfos {
+        width: 90vw;
+    }
+    .introinfos button{
+        width: 30vw;
+    }
+    .introinfos h1{
+        font-size: 1.8rem;
+    }
+
+    .posts{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .viewall{
+        display: none;
+    }
+    .post1{
+        justify-content: center;
+    }
+    section{
+        width: 90vw;
+    }
+
+    .post{
+        text-align: center;
+    }
+    .work{
+        flex-direction: column ;
+        align-items: center;
+    }
+    
+    .contentctn .work-detail {
+        width: 90vw;
+    }
+
+    .imgctn img{
+        width: 80vw;
+    }
+    .featured{
+        align-items: center;
+        text-align: center;
+        grid-template-rows: 0.4fr 3fr 3fr 3fr;
+    }
+    .work-year{
+        padding: 1rem;
+    }
+    .work-detail{
+        padding: 1rem;
+    }
+}
